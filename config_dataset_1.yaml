@@ -1,0 +1,32 @@
+random_seed: 42
+
+agent:
+  max_iterations: 5
+  max_experiments: 2
+
+llm:
+  provider: mock
+  model: mock
+  temperature: 0
+
+data:
+  labels_path: data/dataset_1/labels.csv
+  id_column: "Unnamed: 0"
+  label_column: "Class"
+
+output:
+  root: outputs
+
+inspection:
+  near_constant_threshold: 0.99
+  high_cardinality_threshold: 50
+  small_n_threshold: 10
+  large_p_threshold: 1000
+  high_dimensional_ratio_threshold: 5
+  scaling_ratio_threshold: 100
+
+evaluation:
+  trustworthiness_neighbors: 10
+  external_validation_neighbors: 10
+  distance_sample_size: 1000
+  stability_runs: 3

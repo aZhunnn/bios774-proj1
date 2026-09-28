@@ -1,0 +1,110 @@
+[
+  {
+    "embedding_id": "umap_f83633334a",
+    "external_validation_metrics": {},
+    "input_ref": "linear_representation",
+    "intrinsic_metrics": {
+      "distance_pearson_correlation": 0.7350858159045288,
+      "distance_spearman_correlation": 0.7858621048711933,
+      "knn_preservation": 0.2131111111111111,
+      "trustworthiness": 0.921947076150466
+    },
+    "iteration": 0,
+    "metrics": {
+      "distance_pearson_correlation": 0.7350858159045288,
+      "distance_spearman_correlation": 0.7858621048711933,
+      "knn_preservation": 0.2131111111111111,
+      "trustworthiness": 0.921947076150466
+    },
+    "notes": [
+      "umap emphasizes local neighborhoods; global distance correlations should be interpreted cautiously."
+    ],
+    "output_ref": "terminal_embedding",
+    "parent_fidelity": {
+      "embedding_id": "umap_f83633334a",
+      "external_validation_metrics": {},
+      "intrinsic_metrics": {
+        "distance_pearson_correlation": 0.7350858159045288,
+        "distance_spearman_correlation": 0.7858621048711933,
+        "knn_preservation": 0.2131111111111111,
+        "trustworthiness": 0.921947076150466
+      },
+      "metrics": {
+        "distance_pearson_correlation": 0.7350858159045288,
+        "distance_spearman_correlation": 0.7858621048711933,
+        "knn_preservation": 0.2131111111111111,
+        "trustworthiness": 0.921947076150466
+      },
+      "notes": [
+        "umap emphasizes local neighborhoods; global distance correlations should be interpreted cautiously."
+      ],
+      "warnings": []
+    },
+    "provenance": {
+      "parent_fidelity_reference": "linear_representation",
+      "root_fidelity_reference": "preprocessed_X"
+    },
+    "root_fidelity": {
+      "reason": "Root-fidelity metrics currently require dense input; the sparse root was not densified.",
+      "reference_ref": "preprocessed_X",
+      "status": "not_computed"
+    },
+    "step_id": "terminal_embedding",
+    "timestamp": "2026-09-25T04:24:45.210066+00:00",
+    "warnings": []
+  },
+  {
+    "embedding_id": "pca_0265a858c8",
+    "external_validation_metrics": {},
+    "input_ref": "linear_representation",
+    "intrinsic_metrics": {
+      "distance_pearson_correlation": 0.9084762227046368,
+      "distance_spearman_correlation": 0.8901421591312259,
+      "knn_preservation": 0.0877037037037037,
+      "trustworthiness": 0.8649809951504867
+    },
+    "iteration": 1,
+    "metrics": {
+      "distance_pearson_correlation": 0.9084762227046368,
+      "distance_spearman_correlation": 0.8901421591312259,
+      "knn_preservation": 0.0877037037037037,
+      "trustworthiness": 0.8649809951504867
+    },
+    "notes": [
+      "PCA-family embeddings have method-specific variance or component metadata when available."
+    ],
+    "output_ref": "terminal_pca_2",
+    "parent_fidelity": {
+      "embedding_id": "pca_0265a858c8",
+      "external_validation_metrics": {},
+      "intrinsic_metrics": {
+        "distance_pearson_correlation": 0.9084762227046368,
+        "distance_spearman_correlation": 0.8901421591312259,
+        "knn_preservation": 0.0877037037037037,
+        "trustworthiness": 0.8649809951504867
+      },
+      "metrics": {
+        "distance_pearson_correlation": 0.9084762227046368,
+        "distance_spearman_correlation": 0.8901421591312259,
+        "knn_preservation": 0.0877037037037037,
+        "trustworthiness": 0.8649809951504867
+      },
+      "notes": [
+        "PCA-family embeddings have method-specific variance or component metadata when available."
+      ],
+      "warnings": []
+    },
+    "provenance": {
+      "parent_fidelity_reference": "linear_representation",
+      "root_fidelity_reference": "preprocessed_X"
+    },
+    "root_fidelity": {
+      "reason": "Root-fidelity metrics currently require dense input; the sparse root was not densified.",
+      "reference_ref": "preprocessed_X",
+      "status": "not_computed"
+    },
+    "step_id": "terminal_pca_2",
+    "timestamp": "2026-09-25T04:24:45.877367+00:00",
+    "warnings": []
+  }
+]

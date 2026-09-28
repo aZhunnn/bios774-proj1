@@ -1,0 +1,33 @@
+random_seed: 42
+
+agent:
+  max_iterations: 5
+  max_experiments: 10
+  max_analysis_steps: 20
+
+llm:
+  provider: configurable
+  model: configurable
+  temperature: 0
+
+data:
+  labels_path: null
+  id_column: null
+  label_column: null
+
+output:
+  root: outputs
+
+inspection:
+  near_constant_threshold: 0.99
+  high_cardinality_threshold: 50
+  small_n_threshold: 10
+  large_p_threshold: 1000
+  high_dimensional_ratio_threshold: 5
+  scaling_ratio_threshold: 100
+
+evaluation:
+  trustworthiness_neighbors: 10
+  external_validation_neighbors: 10
+  distance_sample_size: 1000
+  stability_runs: 3

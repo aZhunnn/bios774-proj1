@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+umap-learn
+pydantic
+openai>=2.33,<3
+PyYAML
+pytest

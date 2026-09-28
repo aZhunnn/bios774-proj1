@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red30\green40\blue49;\red0\green0\blue0;\red13\green107\blue158;
+}
+{\*\expandedcolortbl;;\cspthree\c16409\c20623\c24682;\cspthree\c0\c0\c0;\cspthree\c21414\c49027\c66580;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 Project 1: Building an AI Agent for Dimension Reduction and Exploratory Data Analysis\
+In this project, you will build an AI agent that automatically performs exploratory data analysis\
+through dimension reduction. Unlike a traditional benchmarking study, your goal is to develop an\
+automated analysis system that can analyze previously unseen datasets with minimal human\
+intervention.\
+Given a new dataset, your agent should automatically determine an appropriate analysis\
+workflow, execute the selected methods, evaluate the results, and generate a summary of its\
+findings.\
+Requirements\
+Task\
+Your agent should automatically perform the following steps:\
+Inspect the dataset (e.g., number of samples, number of features, missing values, sparsity,\
+feature types, etc.).\
+Recommend and perform appropriate preprocessing when necessary.\
+Select one or more suitable dimension reduction methods.\
+Select appropriate hyperparameters.\
+Generate low-dimensional representations and visualizations.\
+Evaluate the resulting embeddings using appropriate quantitative or qualitative criteria.\
+Produce a final analysis report summarizing the decisions and findings.\
+The objective is to build a system that can analyze new datasets automatically rather than\
+manually applying every available algorithm.\
+Dimension Reduction Methods\
+Your agent should be capable of using the dimension reduction methods covered in class. These\
+may include, but are not limited to,\
+PCA\
+At least one variant of PCA\
+
+\fs15\fsmilli7995 \cf3 https://uncch.instructure.com/courses/119902/assignments/981968 1/49/1/26, 9:38 AM 
+\fs24 \cf2 MDS\
+Isomap\
+LLE\
+Laplacian Eigenmaps\
+Di\uc0\u64256 usion Maps\
+GPLVM\
+t-SNE\
+UMAP\
+
+\fs15\fsmilli7995 \cf3 Project 1: Building an AI Agent for Dimension Reduction and Exploratory Data Analysis\
+
+\fs24 \cf2 Your agent does not need to apply every method to every dataset. Instead, it should determine\
+which methods are appropriate for the given data and explain its choices.\
+Datasets\
+Evaluate your agent on at least two real datasets. You may use your own data (ideally related to\
+your dissertation), or you can select from the following backup datasets:\
+PathMNIST or its variants within MedMNIST (see a quick summary here: \cf4 MedMNIST\
+
+\fs21\fsmilli10800 (https://medmnist.com/?utm\
+_\
+source=chatgpt.com) 
+\fs24 \cf2 )\
+Single-cell RNA sequencing data (see an example here: \cf4 Scanpy 3K PBMC\
+
+\fs21\fsmilli10800 (https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering-2017.html) 
+\fs24 \cf2 )\
+Deliverables\
+Submit the following materials through Canvas.\
+1. Source code\
+Your agent should execute the planning, analysis, evaluation, etc, and complete the pipeline with\
+minimal manual guidance/intervention after providing a dataset and/or instructions.\
+2. Generated outputs\
+For each of the two chosen datasets, your agent should generate:\
+visualizations of the learned representations,\
+quantitative evaluation results,\
+a summary of the selected methods and preprocessing steps,\
+a final analysis report.\
+The exact format of these outputs is up to you. The two reports should be named\
+\'93generated_report_1\'94 and \'93generated_report_2\'94\
+. These two AI-generated reports should be\
+submitted with the source code.\
+3. Report\
+In addition to the source code and the two AI-generated reports, submit a manually prepared PDF\
+report named \'93report\'94 of at most four pages (excluding references and appendices).\
+Your report should include:\
+
+\fs15\fsmilli7995 \cf3 https://uncch.instructure.com/courses/119902/assignments/981968 2/49/1/26, 9:38 AM Project 1: Building an AI Agent for Dimension Reduction and Exploratory Data Analysis\
+
+\fs24 \cf2 an overview of your system architecture,\
+how the agent makes analysis decisions,\
+the tools or AI models used,\
+experimental results on all datasets,\
+strengths and limitations of your system.\
+The report should focus on the design and behavior of the AI agent rather than providing an\
+exhaustive benchmark of individual dimension reduction algorithms.\
+Evaluation\
+Projects will be evaluated based on the following criteria:\
+Degree of automation and autonomy of the analysis pipeline.\
+Quality of the analysis decisions made by the agent.\
+Correct use of dimension reduction methods.\
+Quality and clarity of the generated visualizations.\
+Quality of the generated reports and interpretations.\
+Robustness on di\uc0\u64256 erent datasets.\
+Overall software design and reproducibility.\
+The emphasis of this project is on building an intelligent and reusable analysis system, not on\
+obtaining the best performance on a particular dataset.\
+Tools & Examples\
+You may use any publicly available software packages or AI models. Libraries such as scikit-learn,\
+Scanpy, PyTorch, TensorFlow, LangChain, OpenAI Codex, Anthropic Claude Code, OpenAI APIs,\
+Anthropic APIs, or other agent frameworks using open-source models are all acceptable.\
+The specific implementation is entirely up to you.\
+For inspiration, the following Kaggle page (you may need to sign up for a free Kaggle account to\
+view) highlights a few STAI-X 2026 statistical agent designs (Award Challenge C) with a\uc0\u64259 liated\
+GitHub links available:\
+\cf4 https://www.kaggle.com/competitions/stai-x-challenge-2026/discussion?sort=votes\
+
+\fs21\fsmilli10800 (https://www.kaggle.com/competitions/stai-x-challenge-2026/discussion?sort=votes)\
+
+\fs24 \cf2 The winning agent designs were: Biostat-Superpowers, DGPForge, and Sentinelle, but you may\
+also consider the other highly upvoted designs for implementation ideas. Note that many of these\
+designs use either popular subscription or API services such as Codex or Claude Code, however,\
+it is acceptable to replace API calls with open-source models. If you have any questions, please\
+reach out to the instructor or TA anytime.}
